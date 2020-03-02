@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Cantarell|Open+Sans|Oxygen|Roboto|Ubuntu&display=swap');
-html{
+html * {
+
+    box-sizing: border-box;
+}
+
+.traveller ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
 }
 root {
   font-size: 1.4em;
@@ -32,7 +46,40 @@ heading {
     font-family: 'Cantarell', sans-serif;
     margin: 0;
   }
+  .traveller {
+    background-color: brown;
+    padding: 1em;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  }
+  li {
+    list-style-type: none;
+  }
+  .illustrated {
+    float:none;
+    max-width: 100%;
+  }
+  .chapter {
+    margin: 0 auto;
+    background-color: tan;
+  }
 @media only screen and (min-width: 600px;) {
-max-width: 75vw;}
+  .chapter {
+    max-width: 75vw;
+  }
+  .illustrated {
+    float: left;
+    max-width: 90%;
+  }
+}
 @media only screen and (min-width: 900px;) {
-max-width: 50vw;}
+  .chapter {
+max-width: 50vw;
+  }
+  .illustrated {
+    float: right;
+    max-width: 80%;
+  }
+}
